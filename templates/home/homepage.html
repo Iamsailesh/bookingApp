@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/homepage.css' %}">
+{% endblock css %}
+
+{% block content %}
+    <section id="hero" style="background-image:url({% static 'images/4.png' %})">
+
+        <div class="text-container">
+            <h2>Buy, Sell, Rent</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia <br>
+                voluptates tempore molestias quasi esse ex dolor, molestiae soluta <br>
+                 fugiat itaque excepturi, illo, facilis obcaecati earum nulla ullam <br> voluptatibus quos repellendus.</p>
+        </div>
+    </section>
+    <section id="featured">
+        <div class="featured-container">
+            <h2 class="underlined-text">
+                <span >Featured</span> Accomodations
+            </h2>
+            <div class="accomodation-cards d-flex justify-content-around">
+                <div class="ac-card">
+                    <div class="c-header">
+                        <img src="{% static 'images/1.png' %}" alt="Home One" class="img-fluid">
+                    </div>
+                    <div class="c-body">
+                        <h4>Kathmandu, Nepal</h4>
+                        <h6>Rs. 50,0000</h6>
+                    </div>
+                    <div class="c-footer text-center">
+                        <div class="btn btn-warning text-ceter btn-md w-50">View Details</div>
+                    </div>
+                </div>
+                <div class="ac-card">
+                    <div class="c-header">
+                        <img src="{% static 'images/2.png' %}" alt="Home One" class="img-fluid">
+                    </div>
+                    <div class="c-body">
+                        <h4>Kathmandu, Nepal</h4>
+                        <h6>Rs. 50,0000</h6>
+                    </div>
+                    <div class="c-footer text-center">
+                        <div class="btn btn-warning text-ceter btn-md w-50">View Details</div>
+                    </div>
+                </div>
+                <div class="ac-card">
+                    <div class="c-header">
+                        <img src="{% static 'images/3.png' %}" alt="Home One" class="img-fluid">
+                    </div>
+                    <div class="c-body">
+                        <h4>Kathmandu, Nepal</h4>
+                        <h6>Rs. 50,0000</h6>
+                    </div>
+                    <div class="c-footer text-center">
+                        <div class="btn btn-warning text-ceter btn-md w-50">View Details</div>
+                    </div>
+                </div>
+                <div class="ac-card">
+                    <div class="c-header">
+                        <img src="{% static 'images/5.png' %}" alt="Home One" class="img-fluid">
+                    </div>
+                    <div class="c-body">
+                        <h4>Kathmandu, Nepal</h4>
+                        <h6>Rs. 50,0000</h6>
+                    </div>
+                    <div class="c-footer text-center">
+                        <div class="btn btn-warning text-ceter btn-md w-50">View Details</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock content %}
+
+
