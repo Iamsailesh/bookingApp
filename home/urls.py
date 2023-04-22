@@ -5,5 +5,6 @@ from .import views
 urlpatterns = [
     path("", views.homepage),
     path("about/", views.aboutPage),
-    path("details/", views.detailsPage)
+    path("details/<int:id>", views.detailsPage),
+    path("myBookings/", views.myBookings),
 ]
